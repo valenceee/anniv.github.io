@@ -180,6 +180,7 @@ body {
     background: var(--navy-deepest);
     padding: 3.5rem 0;
     overflow: visible;
+    min-height: 100vh;
 }
 
 .timeline-eyebrow {
