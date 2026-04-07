@@ -463,8 +463,10 @@ body {
 }
 
 .letter {
-    width: 1270px;
+    width: 100%;
+    max-width: 1270px;
     margin: 0 auto;
+    padding: 0 2rem;
     position: relative;
     z-index: 1;
     display: flex;
