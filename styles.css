@@ -403,12 +403,15 @@ body {
 
 .kiss.show {
     animation: fadeInUp 0.5s ease forwards;
-    animation-delay: 3s;
+    animation-delay: 1.5s;
 }
 
 @media (max-width: 600px) {
+    .timeline-section {
+        min-height: 90vh;
+    }
     .timeline-track {
-        height: 480px;
+        min-height: 65vh;
     }
 
     .slot-above {
