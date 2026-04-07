@@ -110,17 +110,16 @@ fetch('memories.json')
     function updateSpineWidth() {
       const slots = track.querySelectorAll('.tl-slot');
       const lastSlot = slots[slots.length - 1];
-
       const trackRect = track.getBoundingClientRect();
       const lastRect = lastSlot.getBoundingClientRect();
-
-      const width = (lastRect.left + lastRect.width / 2) - trackRect.left;
-      
+      const width = (lastRect.left + lastRect.width / 2) - trackRect.left + track.scrollLeft;
       spine.style.width = width + 'px';
     }
 
     updateSpineWidth();
-    window.addEventListener('resize', updateSpineWidth);
+    window.addEventListener('resize', () => {
+      setTimeout(updateSpineWidth, 100);
+    });
 });
 
 const track = document.querySelector('.timeline-track');

@@ -200,7 +200,7 @@ body {
     -webkit-overflow-scrolling: touch;
     padding: 0 5vw;
     position: relative;
-    height: 560px;
+    min-height: 65vh;
     -webkit-user-select: none;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
